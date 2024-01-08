@@ -1,0 +1,20 @@
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#buttonBox {
+
+    margin: 15px;
+}
+
+#animationBox {
+    width: 600px;
+    height: 400px;
+    border: solid 2px black;
+}
