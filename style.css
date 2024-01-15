@@ -9,12 +9,72 @@ body {
 
 
 #buttonBox {
-
     margin: 15px;
 }
 
 #animationBox {
+    position: relative;
     width: 600px;
     height: 400px;
     border: solid 2px black;
+    overflow: hidden;
+}
+
+#background {
+    position: absolute;
+}
+
+#propell {
+    position: absolute;
+    left: 75px;
+    top: 40px;
+    width: 100px;
+    height: 100px;
+    animation: propell infinite linear;
+    animation-duration: 0s;
+}
+
+#sky {
+    position: relative;
+    left: -100px;
+    top: 30px;
+    width: 100px;
+    height: auto;
+    animation: sky infinite linear;
+    animation-duration: 0s;
+    
+}
+
+.bush {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    animation: bush infinite linear;
+    animation-duration: 0s;
+}
+
+#bush1 {
+    left: 268px;
+    top: 313px;
+}
+
+#bush2 {
+    left: 400px;
+    top: 300px;
+}
+
+@keyframes propell {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes bush {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(20deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes sky {
+    0% {left: -100px;}
+    100% {left: 700px;}
 }
